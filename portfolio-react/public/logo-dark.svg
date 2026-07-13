@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Yomogi&amp;display=swap');
     .logo-text {
-      font-family: 'Great Vibes', cursive;
+      font-family: 'Yomogi', cursive;
       font-size: 90px;
       fill: #ffffff;
       text-anchor: middle;
