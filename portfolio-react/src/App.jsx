@@ -23,6 +23,36 @@ function App() {
     seconds: '00'
   });
 
+  // Security: Prevent Right-Click & F12 Inspect Element shortcuts
+  useEffect(() => {
+    const handleContextMenu = (e) => {
+      e.preventDefault();
+    };
+
+    const handleKeyDown = (e) => {
+      // Prevent F12
+      if (e.key === "F12") {
+        e.preventDefault();
+      }
+      // Prevent Ctrl+Shift+I (Inspect), Ctrl+Shift+J (Console), Ctrl+Shift+C (Inspect Element)
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C" || e.key === "i" || e.key === "j" || e.key === "c")) {
+        e.preventDefault();
+      }
+      // Prevent Ctrl+U (View Source)
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+      }
+    };
+
+    document.addEventListener("contextmenu", handleContextMenu);
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   // Preloader activation & Notification Pop
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -318,10 +348,12 @@ function App() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    const name = e.target.elements[0].value;
-    const email = e.target.elements[1].value;
-    const subject = e.target.elements[2].value;
-    const message = e.target.elements[3].value;
+    // Sanitize input to filter out HTML tags (XSS protection)
+    const sanitize = (text) => text.replace(/<[^>]*>?/gm, '');
+    const name = sanitize(e.target.elements[0].value);
+    const email = sanitize(e.target.elements[1].value);
+    const subject = sanitize(e.target.elements[2].value);
+    const message = sanitize(e.target.elements[3].value);
 
     const mailtoUrl = `mailto:dqduc2204@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Chào bạn,\n\nTên người gửi: ${name}\nEmail liên hệ: ${email}\n\nNội dung thư:\n${message}`)}`;
     
