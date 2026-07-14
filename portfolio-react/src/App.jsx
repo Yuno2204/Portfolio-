@@ -23,8 +23,7 @@ function App() {
     seconds: '00'
   });
 
-  // Security: Prevent Right-Click & F12 Inspect Element shortcuts (Temporarily disabled)
-  /*
+  // Security: Prevent Right-Click & F12 Inspect Element shortcuts
   useEffect(() => {
     const handleContextMenu = (e) => {
       e.preventDefault();
@@ -53,7 +52,6 @@ function App() {
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
-  */
 
   // Preloader activation & Notification Pop
   useEffect(() => {
