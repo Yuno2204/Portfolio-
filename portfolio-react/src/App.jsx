@@ -31,25 +31,28 @@ function App() {
 
     const handleKeyDown = (e) => {
       // Prevent F12
-      if (e.key === "F12") {
+      if (e.key === "F12" || e.keyCode === 123) {
         e.preventDefault();
+        e.stopPropagation();
       }
       // Prevent Ctrl+Shift+I (Inspect), Ctrl+Shift+J (Console), Ctrl+Shift+C (Inspect Element)
-      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C" || e.key === "i" || e.key === "j" || e.key === "c")) {
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C" || e.key === "i" || e.key === "j" || e.key === "c" || e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
         e.preventDefault();
+        e.stopPropagation();
       }
       // Prevent Ctrl+U (View Source)
-      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+      if (e.ctrlKey && (e.key === "U" || e.key === "u" || e.keyCode === 85)) {
         e.preventDefault();
+        e.stopPropagation();
       }
     };
 
-    document.addEventListener("contextmenu", handleContextMenu);
-    document.addEventListener("keydown", handleKeyDown);
+    document.addEventListener("contextmenu", handleContextMenu, true);
+    window.addEventListener("keydown", handleKeyDown, true);
 
     return () => {
-      document.removeEventListener("contextmenu", handleContextMenu);
-      document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("contextmenu", handleContextMenu, true);
+      window.removeEventListener("keydown", handleKeyDown, true);
     };
   }, []);
 
