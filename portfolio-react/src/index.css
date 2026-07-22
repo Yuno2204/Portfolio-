@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
 
 
 /* --- Merged from downloaded/css/particles.css --- */
@@ -608,7 +609,7 @@ canvas {
 
 *:not(i) {
     /* font-family: "Open Sans", sans-serif; */
-    font-family: 'Yomogi', cursive;
+    font-family: 'Yomogi', 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
     font-weight: bold;
 }
 
