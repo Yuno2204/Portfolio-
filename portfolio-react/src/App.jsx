@@ -399,6 +399,16 @@ function App() {
     }
   }, [theme]);
 
+  // Update Language attribute and body class for Chinese font override
+  useEffect(() => {
+    document.documentElement.setAttribute('lang', lang);
+    if (lang === 'zh') {
+      document.body.classList.add('lang-zh');
+    } else {
+      document.body.classList.remove('lang-zh');
+    }
+  }, [lang]);
+
   // Update Skin Color variable and Custom Cursor Color
   useEffect(() => {
     document.documentElement.style.setProperty('--skin-color', skinColor);

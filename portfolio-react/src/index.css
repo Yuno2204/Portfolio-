@@ -613,6 +613,12 @@ canvas {
     font-weight: bold;
 }
 
+/* Perfect Chinese Font Override: When language is Chinese (ZH), switch 100% to Noto Sans SC so no CJK fallback font mixing occurs */
+html[lang="zh"] *:not(i),
+body.lang-zh *:not(i) {
+    font-family: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', sans-serif !important;
+}
+
 html {
     font-size: 62.5%;
     line-height: 1.5;
