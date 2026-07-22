@@ -1217,31 +1217,18 @@ a {
     color: var(--skin-color);
 }
 
-.about-section .about-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .about-section .about-info div {
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
 }
 
 .about-section .about-info p {
-    margin-bottom: 0;
-    font-size: 17px;
-    line-height: 1.6;
+    margin-bottom: 5px;
 }
 
 .about-section .about-info div>p:first-child {
     color: var(--skin-color);
-    min-width: 170px;
-    font-weight: 700;
-    font-size: 17px;
-    letter-spacing: 0.2px;
-    flex-shrink: 0;
+    min-width: 140px
 }
 
 .about-section .about-info p span {
@@ -1250,7 +1237,7 @@ a {
 }
 
 .about-section .about-info span.paddingAge {
-    padding: 0 4px 0 2px;
+    padding: 0 0 0 5px
 }
 
 .about-section .about-info a.girl-friend {
@@ -1268,7 +1255,7 @@ a {
 }
 
 .about-section .about-info .btn-1 {
-    margin: 20px 20px 0 0;
+    margin: 30px 20px 0 0;
 }
 
 /* about tabs */

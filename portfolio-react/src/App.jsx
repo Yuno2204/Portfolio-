@@ -522,12 +522,12 @@ function App() {
               <div>
                 <p>Age: </p>
                 <p>
-                  <span id="years" style={{ color: '#ed4747', fontWeight: 'bold' }}>{age.years}</span><span className="paddingAge"> years </span>
-                  <span id="months" style={{ color: '#ed4747', fontWeight: 'bold' }}>{age.months}</span><span className="paddingAge"> months </span>
-                  <span id="days" style={{ color: '#ed4747', fontWeight: 'bold' }}>{age.days}</span><span className="paddingAge"> days </span>
-                  <span id="hours" style={{ color: '#0099ff', fontWeight: 'bold', marginLeft: '4px' }}>{age.hours}</span><span>h </span>
-                  <span id="minutes" style={{ color: '#0099ff', fontWeight: 'bold', marginLeft: '4px' }}>{age.minutes}</span><span>m </span>
-                  <span id="seconds" style={{ color: '#0099ff', fontWeight: 'bold', marginLeft: '4px' }}>{age.seconds}</span><span>s</span>
+                  <span id="years" style={{ color: '#ed4747', fontWeight: 'bold' }}>{age.years}</span><span className="paddingAge">years</span>
+                  <span id="months" style={{ color: '#ed4747', fontWeight: 'bold' }}>{age.months}</span><span className="paddingAge">months</span>
+                  <span id="days" style={{ color: '#ed4747', fontWeight: 'bold' }}>{age.days}</span><span className="paddingAge">days</span>
+                  <span id="hours" style={{ color: '#0099ff', fontWeight: 'bold' }}>{age.hours}</span><span>h</span>
+                  <span id="minutes" style={{ color: '#0099ff', fontWeight: 'bold' }}>{age.minutes}</span><span>m</span>
+                  <span id="seconds" style={{ color: '#0099ff', fontWeight: 'bold' }}>{age.seconds}</span><span>s</span>
                 </p>
               </div>
               <div>
