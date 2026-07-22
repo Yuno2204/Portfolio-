@@ -183,9 +183,9 @@ function App() {
       quotesTitle: '📑 我最喜欢的格言 📑',
       quoteHead: '座右铭',
       quotes: [
-        { text: "过了一天！我们学到了新东西吗？还是变成了昨天的复制品？", author: "丁广德" },
-        { text: "代码文档是写给未来自己的一封情书。", author: "丁广德" },
-        { text: "没有执行力的愿景只是幻觉。", author: "丁广德" }
+        { text: "过了一天！我们学到了新东西吗？还是变成了昨天的复制品？", author: "丁光德" },
+        { text: "代码文档是写给未来自己的一封情书。", author: "丁光德" },
+        { text: "没有执行力的愿景只是幻觉。", author: "丁光德" }
       ],
       contactTitle: '联系我',
       getInTouch: '保持联系',
@@ -196,7 +196,7 @@ function App() {
       sendMsg: '发送留言',
       popupMsg: '记得点击右侧播放背景音乐 relax 哦 💕 Cen 💕',
       okButton: '好的',
-      nameVal: '丁广德'
+      nameVal: '丁光德'
     }
   };
 
