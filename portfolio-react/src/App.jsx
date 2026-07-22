@@ -495,7 +495,7 @@ function App() {
           <div className="row">
             <div className="about-img col l-5 ml-5 m-5 sm-10 s-10">
               <div className="img-box inner-shadow">
-                <img src="/avatar.png" className="outer-shadow" alt="profile-avt" />
+                <img src="/avatar.jpg" className="outer-shadow" alt="profile-avt" />
               </div>
               <div className="social-links">
                 <a href="https://www.facebook.com/cenlove.2204" className="outer-shadow hover-in-shadow" target="_blank" title="facebook"><i className="fab fa-facebook-f"></i></a>
