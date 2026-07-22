@@ -620,6 +620,10 @@ body.lang-zh *:not(i) {
     font-style: normal !important;
 }
 
+html[lang="zh"] .about-section .about-info div>p:first-child {
+    min-width: 125px;
+}
+
 html {
     font-size: 62.5%;
     line-height: 1.5;
@@ -1396,7 +1400,6 @@ a {
 
 .about-section .timeline .timeline-item:nth-child(odd) {
     padding-right: calc(50% + 50px);
-    text-align: right;
 }
 
 .about-section .timeline .timeline-item:nth-child(even) {
@@ -1406,6 +1409,7 @@ a {
 .about-section .timeline .timeline-item-inner {
     position: relative;
     padding: 30px;
+    text-align: center;
 
     font-weight: 600;
     text-transform: capitalize;
