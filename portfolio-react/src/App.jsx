@@ -73,7 +73,8 @@ function App() {
       messagePlaceholder: 'Lời nhắn',
       sendMsg: 'Gửi tin nhắn',
       popupMsg: 'Nhớ bật nhạc ở góc phải để chill nha 💕 Cen 💕',
-      okButton: 'Ok luôn'
+      okButton: 'Ok luôn',
+      nameVal: 'Đinh Quang Đức'
     },
     en: {
       navHome: 'Home',
@@ -133,7 +134,8 @@ function App() {
       messagePlaceholder: 'Message',
       sendMsg: 'Send Message',
       popupMsg: 'Remember to turn on music on the right side to chill 💕 Cen 💕',
-      okButton: 'Got it'
+      okButton: 'Got it',
+      nameVal: 'Đinh Quang Đức'
     },
     zh: {
       navHome: '首页',
@@ -193,7 +195,8 @@ function App() {
       messagePlaceholder: '留言内容',
       sendMsg: '发送留言',
       popupMsg: '记得点击右侧播放背景音乐 relax 哦 💕 Cen 💕',
-      okButton: '好的'
+      okButton: '好的',
+      nameVal: '丁广德'
     }
   };
 
@@ -657,7 +660,8 @@ function App() {
               <p>{curr.hello}</p>
               <h2>{curr.im} <span className="typing" id="color" style={{ color: 'var(--skin-color)' }}>
                 <TypeAnimation
-                  sequence={['Đinh Quang Đức', 2000, '', 500]}
+                  key={lang}
+                  sequence={[curr.nameVal, 2000, '', 500]}
                   wrapper="span"
                   cursor={true}
                   repeat={Infinity}
@@ -710,7 +714,8 @@ function App() {
                 <p><i className="fas fa-user"></i> {curr.fullName}</p>
                 <p className="typing-name" style={{ color: 'var(--skin-color)' }}>
                   <TypeAnimation
-                    sequence={['Đinh Quang Đức', 2000, '', 500]}
+                    key={lang}
+                    sequence={[curr.nameVal, 2000, '', 500]}
                     wrapper="span"
                     cursor={true}
                     repeat={Infinity}
