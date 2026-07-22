@@ -461,7 +461,7 @@ function App() {
                   repeat={Infinity}
                 />
               </span></h2>
-              <h1>Infomation Technology</h1>
+              <h1>Information Systems</h1>
               <a href="#about" onClick={(e) => handleLinkClick(e, '#about')} className="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
             </div>
             <div className="home-img col l-6 ml-6 m-6 sm-12 s-12">
