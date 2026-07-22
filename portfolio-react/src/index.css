@@ -1377,10 +1377,12 @@ a {
 .about-section .experience,
 .about-section .education {
     padding: 0 0 80px 0;
+    width: 100%;
 }
 
 .about-section .timeline {
     position: relative;
+    width: 100%;
 }
 
 .about-section .timeline::before {
@@ -1400,16 +1402,17 @@ a {
 
 .about-section .timeline .timeline-item:nth-child(odd) {
     padding-right: calc(50% + 50px);
+    text-align: right;
 }
 
 .about-section .timeline .timeline-item:nth-child(even) {
     padding-left: calc(50% + 50px);
+    text-align: left;
 }
 
 .about-section .timeline .timeline-item-inner {
     position: relative;
     padding: 30px;
-    text-align: center;
 
     font-weight: 600;
     text-transform: capitalize;

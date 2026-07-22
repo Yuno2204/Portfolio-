@@ -808,7 +808,7 @@ function App() {
           </div>
 
           <div className="row">
-            <div className={`education tab-content ${activeTab === 'education' ? 'active' : ''}`}>
+            <div className={`education tab-content ${activeTab === 'education' ? 'active' : ''} col l-12 ml-12 m-12 sm-12 s-12`}>
               <div className="row">
                 <div className="timeline col l-12 ml-12 m-12 sm-12 s-12">
                   <div className="row">
