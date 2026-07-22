@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 function App() {
+  const [lang, setLang] = useState('vi');
   const [theme, setTheme] = useState('light');
   const [skinColor, setSkinColor] = useState('#ec9142'); // Default color-2 skin
   const [isPlaying, setIsPlaying] = useState(false);
@@ -12,6 +13,95 @@ function App() {
   const [currentSlide, setCurrentSlide] = useState(0); // 0-indexed for proper slide alignment
   const [fadeActive, setFadeActive] = useState(false);
   const [showNotification, setShowNotification] = useState(false);
+
+  const t = {
+    vi: {
+      navHome: 'Trang chủ',
+      navAbout: 'Về tôi',
+      navTestimonial: 'Trích dẫn',
+      navContact: 'Liên hệ',
+      hello: 'Xin chào các bạn',
+      im: 'Tôi là',
+      moreAbout: 'Tìm hiểu về tôi',
+      aboutTitle: 'Về Tôi',
+      mainInfo: 'thông tin chính',
+      fullName: 'Họ và tên: ',
+      dob: 'Ngày sinh: ',
+      age: 'Tuổi: ',
+      years: 'năm',
+      months: 'tháng',
+      days: 'ngày',
+      zodiac: 'Cung hoàng đạo: ',
+      zodiacVal: 'Kim Ngưu (Taurus)',
+      studyingAt: 'Trường học: ',
+      schoolVal: 'ĐH Công nghệ Giao thông Vận tải (UTT)',
+      major: 'Chuyên ngành: ',
+      majorVal: 'Hệ thống thông tin (IT)',
+      classLabel: 'Lớp: ',
+      relationship: 'Tình trạng: ',
+      relationshipVal: 'Độc thân',
+      hobby: 'Sở thích: ',
+      hobbyVal: 'Nghe nhạc, xem phim, Youtube, chơi game.',
+      emailLabel: 'Email: ',
+      livingAt: 'Nơi sống: ',
+      livingVal: 'Tỉnh Bắc Giang',
+      hireMe: 'Tuyển dụng',
+      skills: 'Kỹ năng',
+      education: 'Học vấn',
+      quotesTitle: '📑 Câu Nói Yêu Thích 📑',
+      contactTitle: 'Liên Hệ Với Tôi',
+      getInTouch: 'giữ liên lạc',
+      namePlaceholder: 'Họ tên',
+      emailPlaceholder: 'Email',
+      subjectPlaceholder: 'Tiêu đề',
+      messagePlaceholder: 'Lời nhắn',
+      sendMsg: 'Gửi tin nhắn'
+    },
+    en: {
+      navHome: 'Home',
+      navAbout: 'About Me',
+      navTestimonial: 'Testimonial',
+      navContact: 'Contact',
+      hello: 'Hello, guys',
+      im: "I'm",
+      moreAbout: 'More About Me',
+      aboutTitle: 'About Me',
+      mainInfo: 'main info',
+      fullName: 'Full name: ',
+      dob: 'Date of birth: ',
+      age: 'Age: ',
+      years: 'years',
+      months: 'months',
+      days: 'days',
+      zodiac: 'Zodiac: ',
+      zodiacVal: 'Taurus',
+      studyingAt: 'Studying at: ',
+      schoolVal: 'University of Transport Technology (UTT)',
+      major: 'Major: ',
+      majorVal: 'Information Systems (IT)',
+      classLabel: 'Class: ',
+      relationship: 'In relationship: ',
+      relationshipVal: 'Single',
+      hobby: 'Hobby: ',
+      hobbyVal: 'Listen to music, watch films - youtube, game.',
+      emailLabel: 'Email: ',
+      livingAt: 'Living at: ',
+      livingVal: 'Bac Giang Province',
+      hireMe: 'Hire Me',
+      skills: 'Skills',
+      education: 'Education',
+      quotesTitle: '📑 My Favorites Quote 📑',
+      contactTitle: 'Contact Me',
+      getInTouch: 'get in touch',
+      namePlaceholder: 'Name',
+      emailPlaceholder: 'Email',
+      subjectPlaceholder: 'Subject',
+      messagePlaceholder: 'Message',
+      sendMsg: 'Send Message'
+    }
+  };
+
+  const curr = t[lang];
 
   // Age states
   const [age, setAge] = useState({
@@ -413,16 +503,16 @@ function App() {
         <div className="nav-menu-inner">
           <ul>
             <li>
-              <a href="#home" onClick={(e) => handleLinkClick(e, '#home')} className={`link-item ${activeSection === 'home' ? 'inner-shadow active' : 'outer-shadow'} hover-in-shadow`}>Home</a>
+              <a href="#home" onClick={(e) => handleLinkClick(e, '#home')} className={`link-item ${activeSection === 'home' ? 'inner-shadow active' : 'outer-shadow'} hover-in-shadow`}>{curr.navHome}</a>
             </li>
             <li>
-              <a href="#about" onClick={(e) => handleLinkClick(e, '#about')} className={`link-item ${activeSection === 'about' ? 'inner-shadow active' : 'outer-shadow'} hover-in-shadow`}>About Me</a>
+              <a href="#about" onClick={(e) => handleLinkClick(e, '#about')} className={`link-item ${activeSection === 'about' ? 'inner-shadow active' : 'outer-shadow'} hover-in-shadow`}>{curr.navAbout}</a>
             </li>
             <li>
-              <a href="#testimonial" onClick={(e) => handleLinkClick(e, '#testimonial')} className={`link-item ${activeSection === 'testimonial' ? 'inner-shadow active' : 'outer-shadow'} hover-in-shadow`}>Testimonial</a>
+              <a href="#testimonial" onClick={(e) => handleLinkClick(e, '#testimonial')} className={`link-item ${activeSection === 'testimonial' ? 'inner-shadow active' : 'outer-shadow'} hover-in-shadow`}>{curr.navTestimonial}</a>
             </li>
             <li>
-              <a href="#contact" onClick={(e) => handleLinkClick(e, '#contact')} className={`link-item ${activeSection === 'contact' ? 'inner-shadow active' : 'outer-shadow'} hover-in-shadow`}>Contact</a>
+              <a href="#contact" onClick={(e) => handleLinkClick(e, '#contact')} className={`link-item ${activeSection === 'contact' ? 'inner-shadow active' : 'outer-shadow'} hover-in-shadow`}>{curr.navContact}</a>
             </li>
           </ul>
         </div>
@@ -452,8 +542,8 @@ function App() {
         <div className="container">
           <div className="row full-screen align-items-center">
             <div className="home-text col l-6 ml-6 m-6 sm-12 s-12">
-              <p>Hello, guys</p>
-              <h2>I'm <span className="typing" id="color" style={{ color: 'var(--skin-color)' }}>
+              <p>{curr.hello}</p>
+              <h2>{curr.im} <span className="typing" id="color" style={{ color: 'var(--skin-color)' }}>
                 <TypeAnimation
                   sequence={['Đinh Quang Đức', 2000, '', 500]}
                   wrapper="span"
@@ -462,7 +552,7 @@ function App() {
                 />
               </span></h2>
               <h1>Information Systems</h1>
-              <a href="#about" onClick={(e) => handleLinkClick(e, '#about')} className="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
+              <a href="#about" onClick={(e) => handleLinkClick(e, '#about')} className="link-item btn-1 outer-shadow hover-in-shadow">{curr.moreAbout}</a>
             </div>
             <div className="home-img col l-6 ml-6 m-6 sm-12 s-12">
               <div className="img-box inner-shadow">
@@ -489,7 +579,7 @@ function App() {
         <div className="container">
           <div className="row">
             <div className="section-title col l-12 ml-12 m-12 sm-12 s-12">
-              <h2 data-heading="main info">About Me</h2>
+              <h2 data-heading={curr.mainInfo}>{curr.aboutTitle}</h2>
             </div>
           </div>
           <div className="row">
@@ -505,7 +595,7 @@ function App() {
             
             <div className="about-info col l-7 ml-7 m-7 sm-12 s-12">
               <div>
-                <p><i className="fas fa-user"></i> Full name: </p>
+                <p><i className="fas fa-user"></i> {curr.fullName}</p>
                 <p className="typing-name" style={{ color: 'var(--skin-color)' }}>
                   <TypeAnimation
                     sequence={['Đinh Quang Đức', 2000, '', 500]}
@@ -516,62 +606,62 @@ function App() {
                 </p>
               </div>
               <div>
-                <p><i className="far fa-calendar-alt"></i> Date of birth: </p>
+                <p><i className="far fa-calendar-alt"></i> {curr.dob}</p>
                 <p>22/04/2004</p>
               </div>
               <div>
-                <p><i className="fas fa-hourglass-half"></i> Age: </p>
+                <p><i className="fas fa-hourglass-half"></i> {curr.age}</p>
                 <p>
-                  <span id="years" style={{ color: '#ed4747', fontWeight: 'bold' }}>{age.years}</span><span className="paddingAge">years</span>
-                  <span id="months" style={{ color: '#ed4747', fontWeight: 'bold' }}>{age.months}</span><span className="paddingAge">months</span>
-                  <span id="days" style={{ color: '#ed4747', fontWeight: 'bold' }}>{age.days}</span><span className="paddingAge">days</span>
+                  <span id="years" style={{ color: '#ed4747', fontWeight: 'bold' }}>{age.years}</span><span className="paddingAge">{curr.years}</span>
+                  <span id="months" style={{ color: '#ed4747', fontWeight: 'bold' }}>{age.months}</span><span className="paddingAge">{curr.months}</span>
+                  <span id="days" style={{ color: '#ed4747', fontWeight: 'bold' }}>{age.days}</span><span className="paddingAge">{curr.days}</span>
                   <span id="hours" style={{ color: '#0099ff', fontWeight: 'bold' }}>{age.hours}</span><span>h</span>
                   <span id="minutes" style={{ color: '#0099ff', fontWeight: 'bold' }}>{age.minutes}</span><span>m</span>
                   <span id="seconds" style={{ color: '#0099ff', fontWeight: 'bold' }}>{age.seconds}</span><span>s</span>
                 </p>
               </div>
               <div>
-                <p><i className="fas fa-star"></i> Zodiac: </p>
-                <p>Taurus</p>
+                <p><i className="fas fa-star"></i> {curr.zodiac}</p>
+                <p>{curr.zodiacVal}</p>
               </div>
               <div>
-                <p><i className="fas fa-university"></i> Studying at: </p>
-                <p>University of Transport Technology (UTT)</p>
+                <p><i className="fas fa-university"></i> {curr.studyingAt}</p>
+                <p>{curr.schoolVal}</p>
               </div>
               <div>
-                <p><i className="fas fa-laptop-code"></i> Major: </p>
-                <p>Information Systems (IT)</p>
+                <p><i className="fas fa-laptop-code"></i> {curr.major}</p>
+                <p>{curr.majorVal}</p>
               </div>
               <div>
-                <p><i className="fas fa-layer-group"></i> Class: </p>
+                <p><i className="fas fa-layer-group"></i> {curr.classLabel}</p>
                 <p>73DCHT23 (K73)</p>
               </div>
               <div>
-                <p><i className="fas fa-heart"></i> In relationship: </p>
-                <p>Single</p>
+                <p><i className="fas fa-heart"></i> {curr.relationship}</p>
+                <p>{curr.relationshipVal}</p>
               </div>
               <div>
-                <p><i className="fas fa-gamepad"></i> Hobby: </p>
-                <p>Listen to music, watch films - youtube, game.</p>
+                <p><i className="fas fa-gamepad"></i> {curr.hobby}</p>
+                <p>{curr.hobbyVal}</p>
               </div>
               <div>
-                <p><i className="fas fa-envelope"></i> Email: </p>
+                <p><i className="fas fa-envelope"></i> {curr.emailLabel}</p>
                 <p style={{ wordBreak: 'break-all' }}>dqduc2204@gmail.com</p>
               </div>
               <div>
-                <p><i className="fas fa-map-marker-alt"></i> Living at: </p>
-                <p>Bac Giang Province</p>
+                <p><i className="fas fa-map-marker-alt"></i> {curr.livingAt}</p>
+                <p>{curr.livingVal}</p>
               </div>
               <div>
-                <a href="#contact" onClick={(e) => handleLinkClick(e, '#contact')} className="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+                <a href="#contact" onClick={(e) => handleLinkClick(e, '#contact')} className="link-item btn-1 outer-shadow hover-in-shadow">{curr.hireMe}</a>
               </div>
             </div>
           </div>
 
           <div className="row">
             <div className="about-tabs col l-12 ml-12 m-12 sm-12 s-12">
-              <span onClick={() => setActiveTab('skills')} className={`tab-item ${activeTab === 'skills' ? 'active outer-shadow' : 'hover-in-shadow'}`}>Skills</span>
-              <span onClick={() => setActiveTab('education')} className={`tab-item ${activeTab === 'education' ? 'active outer-shadow' : 'hover-in-shadow'}`}>Education</span>
+              <span onClick={() => setActiveTab('skills')} className={`tab-item ${activeTab === 'skills' ? 'active outer-shadow' : 'hover-in-shadow'}`}>{curr.skills}</span>
+              <span onClick={() => setActiveTab('education')} className={`tab-item ${activeTab === 'education' ? 'active outer-shadow' : 'hover-in-shadow'}`}>{curr.education}</span>
             </div>
           </div>
 
@@ -650,7 +740,7 @@ function App() {
         <div className="container">
           <div className="row">
             <div className="section-title col l-12 ml-12 m-12 sm-12 s-12">
-              <h2 data-heading="Testimonial">📑 My Favorites Quote 📑</h2>
+              <h2 data-heading="Testimonial">{curr.quotesTitle}</h2>
             </div>
           </div>
           <div className="row">
@@ -682,7 +772,7 @@ function App() {
         <div className="container">
           <div className="row">
             <div className="section-title col l-12 ml-12 m-12 sm-12 s-12">
-              <h2 data-heading="contact">Get In Touch</h2>
+              <h2 data-heading={curr.getInTouch}>{curr.contactTitle}</h2>
             </div>
           </div>
           <div className="row justify-content-center">
@@ -707,24 +797,24 @@ function App() {
                 <div className="row">
                   <div className="col l-6 ml-6 m-12 sm-12 s-12">
                     <div className="input-group outer-shadow hover-in-shadow">
-                      <input type="text" placeholder="Name" className="input-control" required />
+                      <input type="text" placeholder={curr.namePlaceholder} className="input-control" required />
                     </div>
                     <div className="input-group outer-shadow hover-in-shadow">
-                      <input type="text" placeholder="Email" className="input-control" required />
+                      <input type="text" placeholder={curr.emailPlaceholder} className="input-control" required />
                     </div>
                     <div className="input-group outer-shadow hover-in-shadow">
-                      <input type="text" placeholder="Subject" className="input-control" required />
+                      <input type="text" placeholder={curr.subjectPlaceholder} className="input-control" required />
                     </div>
                   </div>
                   <div className="col l-6 ml-6 m-12 sm-12 s-12">
                     <div className="input-group outer-shadow hover-in-shadow">
-                      <textarea cols="30" rows="10" className="input-control" placeholder="Message"></textarea>
+                      <textarea cols="30" rows="10" className="input-control" placeholder={curr.messagePlaceholder}></textarea>
                     </div>
                   </div>
                 </div>
                 <div className="row">
                   <div className="submit-btn col l-12 ml-12 m-12 sm-12 s-12">
-                    <button type="submit" className="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+                    <button type="submit" className="btn-1 outer-shadow hover-in-shadow">{curr.sendMsg}</button>
                   </div>
                 </div>
               </form>
@@ -761,6 +851,15 @@ function App() {
       <audio id="myAudio" src="/music.mp3" loop type="audio/mp3"></audio>
       <div onClick={toggleMusic} className={`music outer-shadow hover-in-shadow ${isPlaying ? '' : 'pause'}`} title="Ed Sheeran - Photograph">
         <i className="fas fa-music"></i>
+      </div>
+
+      {/* Language Switcher start */}
+      <div 
+        onClick={() => setLang(lang === 'vi' ? 'en' : 'vi')} 
+        className="lang-switcher outer-shadow hover-in-shadow" 
+        title={lang === 'vi' ? 'Chuyển sang English' : 'Switch to Tiếng Việt'}
+      >
+        <span>{lang === 'vi' ? 'VI' : 'EN'}</span>
       </div>
 
       {/* Custom Popup Notification */}
