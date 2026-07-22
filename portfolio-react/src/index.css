@@ -2937,6 +2937,14 @@ a.copyright {
     user-select: none;
 }
 
+.lang-switcher::after {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 .lang-switcher:hover {
     color: var(--skin-color);
 }
