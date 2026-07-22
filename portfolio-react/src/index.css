@@ -1228,7 +1228,14 @@ a {
 
 .about-section .about-info div>p:first-child {
     color: var(--skin-color);
-    min-width: 140px
+    min-width: 165px;
+}
+
+.about-section .about-info div>p:first-child i {
+    width: 20px;
+    margin-right: 8px;
+    text-align: center;
+    color: var(--skin-color);
 }
 
 .about-section .about-info p span {

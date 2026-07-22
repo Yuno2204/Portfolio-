@@ -505,7 +505,7 @@ function App() {
             
             <div className="about-info col l-7 ml-7 m-7 sm-12 s-12">
               <div>
-                <p>Full name: </p>
+                <p><i className="fas fa-user"></i> Full name: </p>
                 <p className="typing-name" style={{ color: 'var(--skin-color)' }}>
                   <TypeAnimation
                     sequence={['Đinh Quang Đức', 2000, '', 500]}
@@ -516,11 +516,11 @@ function App() {
                 </p>
               </div>
               <div>
-                <p>Date of birth: </p>
+                <p><i className="far fa-calendar-alt"></i> Date of birth: </p>
                 <p>22/04/2004</p>
               </div>
               <div>
-                <p>Age: </p>
+                <p><i className="fas fa-hourglass-half"></i> Age: </p>
                 <p>
                   <span id="years" style={{ color: '#ed4747', fontWeight: 'bold' }}>{age.years}</span><span className="paddingAge">years</span>
                   <span id="months" style={{ color: '#ed4747', fontWeight: 'bold' }}>{age.months}</span><span className="paddingAge">months</span>
@@ -531,35 +531,35 @@ function App() {
                 </p>
               </div>
               <div>
-                <p>Zodiac: </p>
+                <p><i className="fas fa-star"></i> Zodiac: </p>
                 <p>Taurus</p>
               </div>
               <div>
-                <p>Studying at: </p>
+                <p><i className="fas fa-university"></i> Studying at: </p>
                 <p>University of Transport Technology (UTT)</p>
               </div>
               <div>
-                <p>Major: </p>
+                <p><i className="fas fa-laptop-code"></i> Major: </p>
                 <p>Information Systems (IT)</p>
               </div>
               <div>
-                <p>Class: </p>
+                <p><i className="fas fa-layer-group"></i> Class: </p>
                 <p>73DCHT23 (K73)</p>
               </div>
               <div>
-                <p>In relationship: </p>
+                <p><i className="fas fa-heart"></i> In relationship: </p>
                 <p>Single</p>
               </div>
               <div>
-                <p>Hobby: </p>
+                <p><i className="fas fa-gamepad"></i> Hobby: </p>
                 <p>Listen to music, watch films - youtube, game.</p>
               </div>
               <div>
-                <p>Email: </p>
+                <p><i className="fas fa-envelope"></i> Email: </p>
                 <p style={{ wordBreak: 'break-all' }}>dqduc2204@gmail.com</p>
               </div>
               <div>
-                <p>Living at: </p>
+                <p><i className="fas fa-map-marker-alt"></i> Living at: </p>
                 <p>Bac Giang Province</p>
               </div>
               <div>
