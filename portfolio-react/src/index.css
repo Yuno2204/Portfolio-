@@ -1413,6 +1413,11 @@ a {
 .about-section .timeline .timeline-item-inner {
     position: relative;
     padding: 30px;
+    width: 100%;
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     font-weight: 600;
     text-transform: capitalize;
