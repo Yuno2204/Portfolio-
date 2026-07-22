@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 function App() {
-  const [lang, setLang] = useState('vi');
+  const [lang, setLang] = useState('en');
   const [theme, setTheme] = useState('light');
   const [skinColor, setSkinColor] = useState('#ec9142'); // Default color-2 skin
   const [isPlaying, setIsPlaying] = useState(false);
