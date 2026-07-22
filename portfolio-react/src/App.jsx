@@ -48,14 +48,32 @@ function App() {
       hireMe: 'Tuyển dụng',
       skills: 'Kỹ năng',
       education: 'Học vấn',
+      langLabel: 'Ngôn ngữ:',
+      databaseLabel: 'Cơ sở dữ liệu:',
+      edu1Degree: 'Hệ thống thông tin',
+      edu1School: 'Đại học Công nghệ Giao thông Vận tải',
+      edu2Degree: 'Học sinh',
+      edu2School: 'Trường THPT Hiệp Hòa số 3',
+      edu3Degree: 'Học sinh',
+      edu3School: 'Trường THCS Thường Thắng',
+      edu4Degree: 'Học sinh',
+      edu4School: 'Trường Tiểu học Thường Thắng',
       quotesTitle: '📑 Câu Nói Yêu Thích 📑',
+      quoteHead: 'Trích dẫn',
+      quotes: [
+        { text: "Trải qua một ngày, chúng ta đã học được điều gì mới? Hay lại trở thành bản sao của ngày hôm qua?", author: "Đinh Quang Đức" },
+        { text: "Tài liệu mã nguồn là bức thư tình gửi cho chính bạn trong tương lai.", author: "Đinh Quang Đức" },
+        { text: "Tầm nhìn mà không có sự thực thi thì chỉ là ảo tưởng.", author: "Đinh Quang Đức" }
+      ],
       contactTitle: 'Liên Hệ Với Tôi',
       getInTouch: 'giữ liên lạc',
       namePlaceholder: 'Họ tên',
       emailPlaceholder: 'Email',
       subjectPlaceholder: 'Tiêu đề',
       messagePlaceholder: 'Lời nhắn',
-      sendMsg: 'Gửi tin nhắn'
+      sendMsg: 'Gửi tin nhắn',
+      popupMsg: 'Nhớ bật nhạc ở góc phải để chill nha 💕 Cen 💕',
+      okButton: 'Ok luôn'
     },
     en: {
       navHome: 'Home',
@@ -90,18 +108,102 @@ function App() {
       hireMe: 'Hire Me',
       skills: 'Skills',
       education: 'Education',
-      quotesTitle: '📑 My Favorites Quote 📑',
+      langLabel: 'Language:',
+      databaseLabel: 'Database:',
+      edu1Degree: 'Information Systems',
+      edu1School: 'University of Transport Technology',
+      edu2Degree: 'Student',
+      edu2School: 'Hiệp Hòa No.3 High School',
+      edu3Degree: 'Student',
+      edu3School: 'Thường Thắng Secondary School',
+      edu4Degree: 'Student',
+      edu4School: 'Thường Thắng Primary School',
+      quotesTitle: '📑 My Favorite Quotes 📑',
+      quoteHead: 'Testimonial',
+      quotes: [
+        { text: "After a day! We've learned something new? Or become a copy of yesterday?", author: "Đinh Quang Đức" },
+        { text: "Code documentation is a love-letter to your future self", author: "Đinh Quang Đức" },
+        { text: "Vision without execution is hallucination", author: "Đinh Quang Đức" }
+      ],
       contactTitle: 'Contact Me',
       getInTouch: 'get in touch',
       namePlaceholder: 'Name',
       emailPlaceholder: 'Email',
       subjectPlaceholder: 'Subject',
       messagePlaceholder: 'Message',
-      sendMsg: 'Send Message'
+      sendMsg: 'Send Message',
+      popupMsg: 'Remember to turn on music on the right side to chill 💕 Cen 💕',
+      okButton: 'Got it'
+    },
+    zh: {
+      navHome: '首页',
+      navAbout: '关于我',
+      navTestimonial: '座右铭',
+      navContact: '联系我',
+      hello: '大家好',
+      im: '我是',
+      moreAbout: '了解更多',
+      aboutTitle: '关于我',
+      mainInfo: '主要信息',
+      fullName: '姓名：',
+      dob: '出生日期：',
+      age: '年龄：',
+      years: '岁',
+      months: '个月',
+      days: '天',
+      zodiac: '星座：',
+      zodiacVal: '金牛座 (Taurus)',
+      studyingAt: '就读学校：',
+      schoolVal: '交通运输科技大学 (UTT)',
+      major: '专业：',
+      majorVal: '信息系统 (IT)',
+      classLabel: '班级：',
+      relationship: '感情状态：',
+      relationshipVal: '单身',
+      hobby: '兴趣爱好：',
+      hobbyVal: '听音乐、看电影、Youtube、打游戏。',
+      emailLabel: '邮箱：',
+      livingAt: '居住地：',
+      livingVal: '越南北江省',
+      hireMe: '联系合作',
+      skills: '专业技能',
+      education: '教育背景',
+      langLabel: '编程语言：',
+      databaseLabel: '数据库：',
+      edu1Degree: '信息系统专业',
+      edu1School: '交通运输科技大学',
+      edu2Degree: '高中生',
+      edu2School: '协和第三高中',
+      edu3Degree: '初中生',
+      edu3School: '常胜初中',
+      edu4Degree: '小学生',
+      edu4School: '常胜小学',
+      quotesTitle: '📑 我最喜欢的格言 📑',
+      quoteHead: '座右铭',
+      quotes: [
+        { text: "过了一天！我们学到了新东西吗？还是变成了昨天的复制品？", author: "丁广德" },
+        { text: "代码文档是写给未来自己的一封情书。", author: "丁广德" },
+        { text: "没有执行力的愿景只是幻觉。", author: "丁广德" }
+      ],
+      contactTitle: '联系我',
+      getInTouch: '保持联系',
+      namePlaceholder: '姓名',
+      emailPlaceholder: '邮箱',
+      subjectPlaceholder: '主题',
+      messagePlaceholder: '留言内容',
+      sendMsg: '发送留言',
+      popupMsg: '记得点击右侧播放背景音乐 relax 哦 💕 Cen 💕',
+      okButton: '好的'
     }
   };
 
   const curr = t[lang];
+
+  const toggleLang = () => {
+    if (lang === 'vi') setLang('en');
+    else if (lang === 'en') setLang('zh');
+    else setLang('vi');
+  };
 
   // Age states
   const [age, setAge] = useState({
@@ -670,7 +772,7 @@ function App() {
               <div className="row justify-content-center">
                 <div className="skill-item">
                   <div>
-                    <p>Language:</p>
+                    <p>{curr.langLabel}</p>
                     <p>
                       <span className="outer-shadow hover-in-shadow">C</span>
                       <span className="outer-shadow hover-in-shadow">C#</span>
@@ -679,7 +781,7 @@ function App() {
                     </p>
                   </div>
                   <div>
-                    <p>Database:</p>
+                    <p>{curr.databaseLabel}</p>
                     <p>
                       <span className="outer-shadow hover-in-shadow">MySQL</span>
                       <span className="outer-shadow hover-in-shadow">SQL Server</span>
@@ -699,32 +801,32 @@ function App() {
                       <div className="timeline-item-inner outer-shadow">
                         <i className="fas fa-graduation-cap icon"></i>
                         <span>2022 - 2026</span>
-                        <h3>Information Systems</h3>
-                        <h4>University of Transport Technology</h4>
+                        <h3>{curr.edu1Degree}</h3>
+                        <h4>{curr.edu1School}</h4>
                       </div>
                     </div>
                     <div className="timeline-item col l-12 ml-12 m-12 sm-12 s-12">
                       <div className="timeline-item-inner outer-shadow">
                         <i className="fas fa-graduation-cap icon"></i>
                         <span>2019 - 2022</span>
-                        <h3>Student</h3>
-                        <h4>Hiệp Hòa số 3 High school</h4>
+                        <h3>{curr.edu2Degree}</h3>
+                        <h4>{curr.edu2School}</h4>
                       </div>
                     </div>
                     <div className="timeline-item col l-12 ml-12 m-12 sm-12 s-12">
                       <div className="timeline-item-inner outer-shadow">
                         <i className="fas fa-graduation-cap icon"></i>
                         <span>2015 - 2019</span>
-                        <h3>Student</h3>
-                        <h4>Thường Thắng Secondary school</h4>
+                        <h3>{curr.edu3Degree}</h3>
+                        <h4>{curr.edu3School}</h4>
                       </div>
                     </div>
                     <div className="timeline-item col l-12 ml-12 m-12 sm-12 s-12">
                       <div className="timeline-item-inner outer-shadow">
                         <i className="fas fa-graduation-cap icon"></i>
                         <span>2010 - 2015</span>
-                        <h3>Student</h3>
-                        <h4>Thường Thắng Primary school</h4>
+                        <h3>{curr.edu4Degree}</h3>
+                        <h4>{curr.edu4School}</h4>
                       </div>
                     </div>
                   </div>
@@ -740,14 +842,14 @@ function App() {
         <div className="container">
           <div className="row">
             <div className="section-title col l-12 ml-12 m-12 sm-12 s-12">
-              <h2 data-heading="Testimonial">{curr.quotesTitle}</h2>
+              <h2 data-heading={curr.quoteHead}>{curr.quotesTitle}</h2>
             </div>
           </div>
           <div className="row">
             <div className="testi-box">
               <div className="testi-slider outer-shadow">
                 <div className="testi-slider-container" style={{ marginLeft: `-${currentSlide * 100}%` }}>
-                  {quotes.map((quote, idx) => (
+                  {curr.quotes.map((quote, idx) => (
                     <div key={idx} className="testi-item">
                       <i className="fas fa-quote-left left"></i>
                       <i className="fas fa-quote-right right"></i>
@@ -759,8 +861,8 @@ function App() {
                 </div>
               </div>
               <div className="testi-slider-nav">
-                <span onClick={() => setCurrentSlide(currentSlide === 0 ? quotes.length - 1 : currentSlide - 1)} className="prev outer-shadow hover-in-shadow"><i className="fas fa-angle-left"></i></span>
-                <span onClick={() => setCurrentSlide(currentSlide === quotes.length - 1 ? 0 : currentSlide + 1)} className="next outer-shadow hover-in-shadow"><i className="fas fa-angle-right"></i></span>
+                <span onClick={() => setCurrentSlide(currentSlide === 0 ? curr.quotes.length - 1 : currentSlide - 1)} className="prev outer-shadow hover-in-shadow"><i className="fas fa-angle-left"></i></span>
+                <span onClick={() => setCurrentSlide(currentSlide === curr.quotes.length - 1 ? 0 : currentSlide + 1)} className="next outer-shadow hover-in-shadow"><i className="fas fa-angle-right"></i></span>
               </div>
             </div>
           </div>
@@ -855,11 +957,11 @@ function App() {
 
       {/* Language Switcher start */}
       <div 
-        onClick={() => setLang(lang === 'vi' ? 'en' : 'vi')} 
+        onClick={toggleLang} 
         className="lang-switcher outer-shadow hover-in-shadow" 
-        title={lang === 'vi' ? 'Chuyển sang English' : 'Switch to Tiếng Việt'}
+        title={lang === 'vi' ? 'Chuyển sang English' : lang === 'en' ? 'Switch to 中文' : 'Chuyển sang Tiếng Việt'}
       >
-        <span>{lang === 'vi' ? 'VI' : 'EN'}</span>
+        <span>{lang === 'vi' ? 'VI' : lang === 'en' ? 'EN' : 'ZH'}</span>
       </div>
 
       {/* Custom Popup Notification */}
@@ -867,8 +969,8 @@ function App() {
         <div className="custom-notification-overlay">
           <div className="custom-notification outer-shadow">
             <i className="fas fa-music" style={{ color: 'var(--skin-color)', fontSize: '28px', marginBottom: '10px' }}></i>
-            <p>Nhớ bật nhạc ở góc phải để chill nha 💕 Cen 💕</p>
-            <button onClick={() => setShowNotification(false)} className="btn-1 outer-shadow hover-in-shadow">Ok luôn</button>
+            <p>{curr.popupMsg}</p>
+            <button onClick={() => setShowNotification(false)} className="btn-1 outer-shadow hover-in-shadow">{curr.okButton}</button>
           </div>
         </div>
       )}
