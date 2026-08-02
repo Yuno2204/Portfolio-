@@ -47,7 +47,10 @@ function App() {
       livingVal: 'Tỉnh Bắc Giang',
       hireMe: 'Tuyển dụng',
       skills: 'Kỹ năng',
-      education: 'Học vấn',
+      education: 'Học vấn & Kinh nghiệm',
+      work1Time: '2022 - Hiện tại',
+      work1Company: 'Công ty TNHH Công nghệ chính xác FULIAN',
+      work1Position: 'Test Engineer',
       langLabel: 'Ngôn ngữ:',
       databaseLabel: 'Cơ sở dữ liệu:',
       edu1Degree: 'Hệ thống thông tin',
@@ -108,7 +111,10 @@ function App() {
       livingVal: 'Bac Giang Province',
       hireMe: 'Hire Me',
       skills: 'Skills',
-      education: 'Education',
+      education: 'Education & Experience',
+      work1Time: '2022 - Present',
+      work1Company: 'Fulian Precision Technology Component Co., Ltd.',
+      work1Position: 'Test Engineer',
       langLabel: 'Language:',
       databaseLabel: 'Database:',
       edu1Degree: 'Information Systems',
@@ -169,7 +175,10 @@ function App() {
       livingVal: '越南北江省',
       hireMe: '联系合作',
       skills: '专业技能',
-      education: '教育背景',
+      education: '教育与工作经历',
+      work1Time: '2022 - 至今',
+      work1Company: '富联精密科技有限责任公司',
+      work1Position: '测试工程师',
       langLabel: '编程语言：',
       databaseLabel: '数据库：',
       edu1Degree: '信息系统专业',
@@ -812,6 +821,14 @@ function App() {
               <div className="row">
                 <div className="timeline col l-12 ml-12 m-12 sm-12 s-12">
                   <div className="row">
+                    <div className="timeline-item col l-12 ml-12 m-12 sm-12 s-12">
+                      <div className="timeline-item-inner outer-shadow">
+                        <i className="fas fa-briefcase icon"></i>
+                        <span>{curr.work1Time}</span>
+                        <h3>{curr.work1Company}</h3>
+                        <h4>{curr.work1Position}</h4>
+                      </div>
+                    </div>
                     <div className="timeline-item col l-12 ml-12 m-12 sm-12 s-12">
                       <div className="timeline-item-inner outer-shadow">
                         <i className="fas fa-graduation-cap icon"></i>
