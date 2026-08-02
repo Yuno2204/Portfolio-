@@ -51,7 +51,7 @@ function App() {
       experience: 'Kinh nghiệm',
       work1Time: '2022 - Hiện tại',
       work1Company: 'Công ty TNHH Công nghệ chính xác FULIAN',
-      work1Position: 'Test Engineer',
+      work1Position: 'Kỹ sư kiểm thử',
       langLabel: 'Ngôn ngữ:',
       databaseLabel: 'Cơ sở dữ liệu:',
       edu1Degree: 'Hệ thống thông tin',
