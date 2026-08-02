@@ -115,7 +115,7 @@ function App() {
       education: 'Education',
       experience: 'Experience',
       work1Time: '2022 - Present',
-      work1Company: 'Fulian Precision Technology Component Co., Ltd.',
+      work1Company: 'CÔNG TY TNHH PRECISION TECHNOLOGY COMPONENT FULIAN',
       work1Position: 'Test Engineer',
       langLabel: 'Language:',
       databaseLabel: 'Database:',
