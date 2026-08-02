@@ -47,7 +47,8 @@ function App() {
       livingVal: 'Tỉnh Bắc Giang',
       hireMe: 'Tuyển dụng',
       skills: 'Kỹ năng',
-      education: 'Học vấn & Kinh nghiệm',
+      education: 'Học vấn',
+      experience: 'Kinh nghiệm',
       work1Time: '2022 - Hiện tại',
       work1Company: 'Công ty TNHH Công nghệ chính xác FULIAN',
       work1Position: 'Test Engineer',
@@ -111,7 +112,8 @@ function App() {
       livingVal: 'Bac Giang Province',
       hireMe: 'Hire Me',
       skills: 'Skills',
-      education: 'Education & Experience',
+      education: 'Education',
+      experience: 'Experience',
       work1Time: '2022 - Present',
       work1Company: 'Fulian Precision Technology Component Co., Ltd.',
       work1Position: 'Test Engineer',
@@ -175,7 +177,8 @@ function App() {
       livingVal: '越南北江省',
       hireMe: '联系合作',
       skills: '专业技能',
-      education: '教育与工作经历',
+      education: '教育背景',
+      experience: '工作经历',
       work1Time: '2022 - 至今',
       work1Company: '富联精密科技有限责任公司',
       work1Position: '测试工程师',
@@ -788,6 +791,7 @@ function App() {
             <div className="about-tabs col l-12 ml-12 m-12 sm-12 s-12">
               <span onClick={() => setActiveTab('skills')} className={`tab-item ${activeTab === 'skills' ? 'active outer-shadow' : 'hover-in-shadow'}`}>{curr.skills}</span>
               <span onClick={() => setActiveTab('education')} className={`tab-item ${activeTab === 'education' ? 'active outer-shadow' : 'hover-in-shadow'}`}>{curr.education}</span>
+              <span onClick={() => setActiveTab('experience')} className={`tab-item ${activeTab === 'experience' ? 'active outer-shadow' : 'hover-in-shadow'}`}>{curr.experience}</span>
             </div>
           </div>
 
@@ -823,14 +827,6 @@ function App() {
                   <div className="row">
                     <div className="timeline-item col l-12 ml-12 m-12 sm-12 s-12">
                       <div className="timeline-item-inner outer-shadow">
-                        <i className="fas fa-briefcase icon"></i>
-                        <span>{curr.work1Time}</span>
-                        <h3>{curr.work1Company}</h3>
-                        <h4>{curr.work1Position}</h4>
-                      </div>
-                    </div>
-                    <div className="timeline-item col l-12 ml-12 m-12 sm-12 s-12">
-                      <div className="timeline-item-inner outer-shadow">
                         <i className="fas fa-graduation-cap icon"></i>
                         <span>2022 - 2026</span>
                         <h3>{curr.edu1Degree}</h3>
@@ -859,6 +855,25 @@ function App() {
                         <span>2010 - 2015</span>
                         <h3>{curr.edu4Degree}</h3>
                         <h4>{curr.edu4School}</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className={`experience tab-content ${activeTab === 'experience' ? 'active' : ''} col l-12 ml-12 m-12 sm-12 s-12`}>
+              <div className="row">
+                <div className="timeline col l-12 ml-12 m-12 sm-12 s-12">
+                  <div className="row">
+                    <div className="timeline-item col l-12 ml-12 m-12 sm-12 s-12">
+                      <div className="timeline-item-inner outer-shadow">
+                        <i className="fas fa-briefcase icon"></i>
+                        <span>{curr.work1Time}</span>
+                        <h3>{curr.work1Company}</h3>
+                        <h4>{curr.work1Position}</h4>
                       </div>
                     </div>
                   </div>
