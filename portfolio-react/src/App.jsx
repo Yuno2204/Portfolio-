@@ -684,7 +684,7 @@ function App() {
             </div>
             <div className="home-img col l-6 ml-6 m-6 sm-12 s-12">
               <div className="img-box inner-shadow">
-                <img src="https://duogbachdev.vercel.app/img/profile-img/code.gif" className="outer-shadow" alt="profile-avt" />
+                <img src="/profile.gif" className="outer-shadow" alt="profile-avt" />
               </div>
             </div>
           </div>
